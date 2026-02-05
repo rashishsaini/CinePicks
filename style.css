@@ -140,3 +140,31 @@ header p {
   }
 }
 
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 5rem 1.5rem 4rem;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(79, 30, 214, 0.15),
+      rgba(15,15,15,0.95)
+    );
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/grain.jpg");
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--muted);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
